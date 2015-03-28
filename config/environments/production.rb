@@ -77,6 +77,15 @@ Rails.application.configure do
   #Set to actual host name
   config.action_mailer.default_url_options = { :host => 'https://app-tyler.herokuapp.com/' }
 
+  # config/environments/production.rb : sets papaerclip to upload to amazon z3
+  config.paperclip_defaults = {
+  :storage => :s3,
+  :s3_credentials => {
+    :bucket => ENV['S3_BUCKET_NAME'],
+    :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+    :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+  }
+}
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 end
