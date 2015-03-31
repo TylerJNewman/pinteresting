@@ -26,4 +26,6 @@ $navbar-height: 50px;
  .checkbox-inline input[type="checkbox"] {
       margin-left: 0;
   }
-
+* {
+  border-radius: 0 !important;
+}
