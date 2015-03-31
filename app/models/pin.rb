@@ -1,10 +1,10 @@
 class Pin < ActiveRecord::Base
      belongs_to :user
      has_attached_file :image, :styles => {
-  :thumb    => ['100x100#',  :jpg, :quality => 70],
-  :preview  => ['480x480#',  :jpg, :quality => 70],
-  :large    => ['600>',      :jpg, :quality => 70],
-  :retina   => ['1200>',     :jpg, :quality => 30]
+  :thumb    => ['100x100#',  :jpg, :quality => 100],
+  :preview  => ['480x480#',  :jpg, :quality => 100],
+  :large    => ['600>',      :jpg, :quality => 100],
+  :retina   => ['1200>',     :jpg, :quality => 60]
 },
 :convert_options => {
   :thumb    => '-set colorspace sRGB -strip',
