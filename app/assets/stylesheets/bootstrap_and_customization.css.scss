@@ -1,18 +1,20 @@
-//@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
 $font-family-sans-serif:                'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$body-bg: #ecf0f1;
 $navbar-default-link-color:							#1E8BC3;
 
 $brand-primary: #19B5FE;
 $jumbotron-bg: #d9edf7;
 $jumbotron-border-color: #bce8f1;
-$navbar-height:                                        50px;
+$navbar-height: 50px;
+
 @import "bootstrap-sprockets";
 @import 'bootstrap';
 
 .center {
      text-align: center;
 }
+
 
 .navbar-brand {
      font-weight: bold;
@@ -24,3 +26,4 @@ $navbar-height:                                        50px;
  .checkbox-inline input[type="checkbox"] {
       margin-left: 0;
   }
+
